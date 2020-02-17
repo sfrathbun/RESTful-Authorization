@@ -1,0 +1,24 @@
+<h1>Hello Admin!</h1>
+<H2>Here is a list of all of the users</H2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Deleted</th>
+        <th>View User</th>
+    </tr>
+
+    {{#each users}}
+
+    <tr>
+        <td>{{FirstName}} {{LastName}}</td>
+        <td>{{Username}}</td>
+        <td>{{Email}}</td>
+        <td>{{Deleted}}</td>
+        <td><a href="{{UserId}}"><button>View User</button></a></td>
+    </tr>
+
+    {{/each}}
+</table>
